@@ -1,0 +1,13 @@
+.babelrc
+postcss.config.js
+tailwind.config.js
+webpack.config.js
+webpack.production.js
+yarn.lock
+
+# Folders
+.storybook
+config
+src/**/*.stories.@(js|jsx|ts|tsx)
+src/**/*.test.@(js|jsx|ts|tsx)
+src/**/__snapshots__
