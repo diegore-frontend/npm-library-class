@@ -1,0 +1,71 @@
+@import "../../styles/ui-colors.scss";
+
+.ui-movie {
+	width: 140px;
+	overflow: hidden;
+
+	&-img {
+		background-color: $main-color;
+		height: 204px;
+		position: relative;
+
+		&-asset {
+			object-fit: contain;
+			width: 100%;
+		}
+	}
+
+	&-title {
+		background-color: $dark-3;
+		text-align: center;
+		padding: 2px 0;
+		position: relative;
+
+		&:after {
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			content: "";
+			height: 0;
+			position: absolute;
+			right: 12px;
+			top: -10px;
+			width: 0;
+			z-index: 99;
+		}
+
+		&--4dx {
+			background-color: $main-color-lighter;
+			.ui-movie-title-text {
+				color: white;
+			}
+			&:after {
+				border-bottom: 12px solid $main-color-lighter;
+			}
+		}	
+		&--promotions {
+			background-color: $warning-color;
+			.ui-movie-title-text {
+				color: $dark;
+			}
+			&:after {
+				border-bottom: 12px solid $warning-color;
+			}
+		}
+		&--discount {
+			background-color: $success-color;
+			.ui-movie-title-text {
+				color: white;
+				font-weight: 700;
+			}
+			&:after {
+				border-bottom: 12px solid $success-color;
+			}
+		}
+		&-text {
+			color: white;
+			margin: 0;
+			font-weight: 300;
+    	font-size: 0.95em;
+		}
+	}
+}

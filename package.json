@@ -1,6 +1,6 @@
 {
-  "name": "@mentor-io/npm-ui-library",
-  "version": "1.1.0",
+  "name": "@mentor-io/npm-library-class",
+  "version": "1.0.0",
   "description": "Component library",
   "private": false,
   "scripts": {

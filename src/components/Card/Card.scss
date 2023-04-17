@@ -1,0 +1,16 @@
+@import "../../styles/ui-colors.scss";
+@import "../../styles/ui-fonts.scss";
+
+.ui-card {
+	font-family: $global-ui-font;
+	font-weight: $global-ui-font-normal;
+	color: $dark;
+	border-radius: 10px;
+	box-shadow: 1px 2px 8px  $dark-3;
+	padding: 16px;
+
+	&-title {
+		border-bottom: 1px solid $dark-3;
+		margin: 0 0 1em;
+	}
+}

@@ -1,0 +1,26 @@
+@import "../../styles/ui-colors.scss";
+@import "../../styles/ui-fonts.scss";
+
+.ui-label {
+	width: 75px;
+	padding: 4px;
+	font-size: 10px;
+	font-weight: $global-ui-font-normal;
+	text-align: center;
+	transform: rotate(-45deg) translate(-24px, -6px);
+	position: absolute;
+	top: 0;
+
+	&--4dx {
+		background-color: $main-color-lighter;
+		color: #FFF;
+	}	
+	&--promotions {
+		background-color: $warning-color;
+	}
+	&--discount {
+		background-color: $success-color;
+		color: #FFF;
+		font-weight: 600;
+	}
+}
